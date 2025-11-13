@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date & Time - Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="Assets/timedate-logo-black.svg" alt="Date & Time Logo">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero-section">
+      <img src="Assets/TimeDate-large-symbol.svg" alt="Time & Date Illustration" class="hero-illustration">
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="Assets/timedate-logo-black.svg" alt="Date & Time Logo">
+      </div>
+      <div class="divider"></div>
+      <div class="footer-content">
+        <ul>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+        </ul>
+        <div class="copyright">
+          <p>Date & Time © <span id="year"></span>. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </footer>
+
+  <script>
+    // Set dynamic year in copyright
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
